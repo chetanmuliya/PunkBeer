@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PunkBeer</string>
+    <string name="hello_blank_fragment">first</string>
+    <string name="first_intro">Welcome to the world of punk beer! We are excited to introduce you to our unique and bold range of craft beers that are sure to excite your taste buds.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="second_intro">The search feature in your beer app allows users to quickly and easily find the exact beer they are looking for. Users can search by beer name to find their preferred beer. </string>
+    <string name="third_intro">Brewer tips provide expert insights on how to brew beer and optimize the brewing process. Food pairing suggestions helps to select the perfect food to complement their beer. Ingredient information allows users to learn more about the specific ingredients that make up their favorite beers</string>
+</resources>

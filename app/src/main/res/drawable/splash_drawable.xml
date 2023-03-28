@@ -1,0 +1,15 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/yellow_lite"/>
+    <item
+        android:top="48dp"
+        android:bottom="48dp"
+        android:left="48dp"
+        android:right="48dp"
+        android:drawable="@drawable/logo_beer"
+        android:gravity="center" />
+    <item android:bottom="50dp">
+        <bitmap
+            android:gravity="bottom"
+            android:src="@drawable/logo_beer_new"/>
+    </item>
+</layer-list>

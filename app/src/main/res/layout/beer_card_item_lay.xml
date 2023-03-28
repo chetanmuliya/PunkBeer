@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="model"
+            type="cm.chettas.punkbeer.data.local.BeerEntity" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+        android:layout_margin="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/yellow_lite"
+                android:layout_gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivBeerImage"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="fitCenter"
+                    android:paddingBottom="10dp"
+                    android:padding="10dp"
+                    app:layout_constraintDimensionRatio="V,2:5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/tvBeerName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@{model.name}"
+                    android:textStyle="bold"
+                    android:background="@drawable/black_shadow_bg"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivBeerImage"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="@string/app_name" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+</layout>
